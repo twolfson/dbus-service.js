@@ -2,6 +2,13 @@
 
 JavaScript implementation for DBus
 
+This was written for [google-music-electron][], a desktop application for Google Music. We wanted to use a JS based DBus implementation to simplify builds and dependencies. We were unable to use [dbus-native][] due to lack of required features (e.g. `GetAll()` ([#102][dbus-native-102]) and `Set()` ([#72][dbus-native-72]) not being supported).
+
+TODO: Add link for google-music-electron
+
+[dbus-native-102]: https://github.com/sidorares/node-dbus/issues/102
+[dbus-native-72]: https://github.com/sidorares/node-dbus/issues/72
+
 ## Getting Started
 Install the module with: `npm install dbus`
 
