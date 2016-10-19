@@ -15,7 +15,7 @@ describe('A DBusService', function () {
   // TODO: Make this a utility
   before(function createDBusService (done) {
     this.dbusService = new DBusService();
-    this.dbusService.connect();
+    this.dbusService.connect(done);
   });
   after(function destroyDBusService () {
     // TODO: Run `disconnect` or similar (e.g. `.end()`)
