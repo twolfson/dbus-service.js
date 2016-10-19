@@ -1,8 +1,8 @@
 {
-  "name": "dbus.js",
-  "description": "JavaScript implementation for D-Bus",
+  "name": "dbus-service.js",
+  "description": "JavaScript implementation for D-Bus services",
   "version": "1.0.0",
-  "homepage": "https://github.com/twolfson/dbus.js",
+  "homepage": "https://github.com/twolfson/dbus-service.js",
   "author": {
     "name": "Todd Wolfson",
     "email": "todd@twolfson.com",
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/twolfson/dbus.js.git"
+    "url": "git://github.com/twolfson/dbus-service.js.git"
   },
   "bugs": {
-    "url": "https://github.com/twolfson/dbus.js/issues"
+    "url": "https://github.com/twolfson/dbus-service.js/issues"
   },
-  "main": "lib/dbus",
+  "main": "lib/dbus-service",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -37,7 +37,8 @@
     "twolfson-style": "~1.6.0"
   },
   "keywords": [
-    "dbus"
+    "dbus",
+    "service"
   ],
   "foundry": {
     "releaseCommands": [

@@ -1,6 +1,6 @@
-# dbus.js [![Build status](https://travis-ci.org/twolfson/dbus.svg?branch=master)](https://travis-ci.org/twolfson/dbus)
+# dbus-service.js [![Build status](https://travis-ci.org/twolfson/dbus-service.js.svg?branch=master)](https://travis-ci.org/twolfson/dbus-service.js)
 
-JavaScript implementation for DBus
+JavaScript implementation for D-Bus services
 
 This was written for [google-music-electron][], a desktop application for Google Music. We wanted to use a JS based DBus implementation to simplify builds and dependencies. We were unable to use [dbus-native][] due to lack of required features (e.g. `GetAll()` ([#102][dbus-native-102]) and `Set()` ([#72][dbus-native-72]) not being supported).
 
@@ -10,11 +10,11 @@ TODO: Add link for google-music-electron
 [dbus-native-72]: https://github.com/sidorares/node-dbus/issues/72
 
 ## Getting Started
-Install the module with: `npm install dbus`
+Install the module with: `npm install dbus-service.js`
 
 ```js
-var dbus = require('dbus');
-dbus(); // 'awesome'
+var DBusService = require('dbus-service.js');
+void new DBusService(); // 'awesome'
 ```
 
 ## Documentation

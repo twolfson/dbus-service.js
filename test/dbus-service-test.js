@@ -1,10 +1,10 @@
 // Load in dependencies
 var assert = require('assert');
-var dbus = require('../');
+var dbusService = require('../');
 
 // Start our tests
-describe('dbus', function () {
+describe('dbus-service', function () {
   it('returns awesome', function () {
-    assert.strictEqual(dbus(), 'awesome');
+    assert.strictEqual(dbusService(), 'awesome');
   });
 });
