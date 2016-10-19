@@ -1,6 +1,5 @@
 // Load in dependencies
-var assert = require('assert');
-var dbusService = require('../');
+var DBusService = require('../');
 
 // jscs:disable maximumLineLength
 // Test commands:
@@ -12,8 +11,18 @@ var dbusService = require('../');
 // jscs:enable maximumLineLength
 
 // Start our tests
-describe('dbus-service', function () {
-  it('returns awesome', function () {
-    assert.strictEqual(dbusService(), 'awesome');
+describe('A DBusService', function () {
+  // TODO: Make this a utility
+  before(function createDBusService (done) {
+    this.dbusService = new DBusService();
+    this.dbusService.connect();
+  });
+  after(function destroyDBusService () {
+    // TODO: Run `disconnect` or similar (e.g. `.end()`)
+    delete this.dbusService;
+  });
+
+  it('connects to DBus successfully', function () {
+    // Errors caught by `before`
   });
 });
